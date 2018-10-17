@@ -30,7 +30,7 @@
 										</div>
 										<div style="margin-top:20px;" class="home-second-section">
 											<div class="second-section-img">
-												<img src="img/images.jpg" alt="Decorating Brush">
+												<img src="img/images.jpg" alt="Paint Brush">
 											</div>
 											<div class="second-section-text">
 												<h1 class="home-headings">Why Choose Us?</h1>

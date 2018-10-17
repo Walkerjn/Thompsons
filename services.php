@@ -47,7 +47,7 @@
 									</div>
 									<div class="col-sm-6 col-md-6 user-info-content">
 										<div class="services-images">
-											<img src="img/IMG_0572-min.JPG" alt="Decorating Exterior">
+											<img src="img/IMG_0572-min.JPG" alt="Garage Door Painted">
 										</div>
 									</div>
 								</div>

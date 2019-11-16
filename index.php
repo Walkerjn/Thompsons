@@ -12,7 +12,7 @@
                                 <div class="row">
                                     <div class="col-sm-8 col-md-8 col-lg-9 darktxt">
                                         <div class="home-main-content">
-                                            <h1 class="home-headings">Thompson's Property Care</h1>
+                                            <h1 class="home-headings">About Us</h1>
                                             <p>Thompson's Property Care is a Banbury based family business offering a comprehensive range of Property Care Services at realistic and affordable prices to Homeowners, Tenants and Landlords. Our services include, Interior and Exterior Painting & Decorating, Gardening, Pressure Cleaning and many more.</p>
                                             <p>We believe that it's our "attention to detail" that makes our work stand out.</p>
                                             <p>We are happy to offer free Estimates and Advice.</p>

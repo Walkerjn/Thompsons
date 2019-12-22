@@ -36,68 +36,56 @@
     <script type="application/ld+json">
         { "@context" : "http://schema.org", "@type" : "LocalBusiness", "name" : "Thompson's Property Care", "image" : "https://www.thompsonspropertycare.co.uk/img/main-logo.png", "telephone" : "01295 258 052", "email" : "enquiries@thompsonspropertycare.co.uk" }
     </script>
+    <?php include("snow.php");?>
 </head>
 
 <body>
-    <?php
-$currentDate = date('Y-m-d');
-$currentDate= date('Y-m-d', strtotime($currentDate));
-$snowDateBegin = date('Y-m-d', strtotime("12/19"));
-$snowDateEnd = date('Y-m-d', strtotime("12/31"));
-if (($currentDate > $snowDateBegin) && ($currentDate < $snowDateEnd)){
-    echo "<div id='snowflakeContainer'>
-        <p class='snowflake'>*</p>
-    </div>";
-}else{
-    echo "";  
-}
-    ?>
-        <div class="header-wrapper">
-            <div class="header">
-                <div class="headerbar">
-                    <div class="container">
-                        <div class="header-content">
-                            <div class="header-left">
-                                <div class="logo">
-                                    <?php
+    <div class="header-wrapper">
+        <div class="header">
+            <div class="headerbar">
+                <div class="container">
+                    <div class="header-content">
+                        <div class="header-left">
+                            <div class="logo">
+                                <?php
                                         if (($currentDate > $snowDateBegin) && ($currentDate < $snowDateEnd)){
                                         echo "<a href='/'><img src='img/christmas-logo.png' alt='Thompsons Property Christmas Care Logo' title='Thompsons Property Care'></a>";
                                             }else{
                                         echo "<a href='/'><img src='img/main-logo.png' alt='Thompsons Property Care Logo' title='Thompsons Property Care'></a>";  
                                                 }
                                     ?>
-                                </div>
                             </div>
-                            <div class="header-right">
-                                <ul class="nav navbar-nav" style="color:white; text-align:center;" id="desktop-nav">
-                                    <li class="<?php if($page =='Home'){echo 'navactive';}?> nav-items"><a href="/">HOME </a></li>
-                                    <li class="<?php if($page =='Services'){echo 'navactive';}?> nav-items"><a href="services.php">SERVICES </a></li>
-                                    <li class="<?php if($page =='Contact'){echo 'navactive';}?> nav-items myBtn"><a href="contactus.php">CONTACT US</a></li>
-                                </ul>
-                                <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="menu menu-trigger noprint " id="hamburger-icon" title="Menu">
-                                    <span class="line line-1"></span>
-                                    <span class="line line-2"></span>
-                                    <span class="line line-3"></span>
-                                    <span class="menu-text">MENU</span>
-                                </button>
-                            </div>
+                        </div>
+                        <div class="header-right">
+                            <ul class="nav navbar-nav" style="color:white; text-align:center;" id="desktop-nav">
+                                <li class="<?php if($page =='Home'){echo 'navactive';}?> nav-items"><a href="/">HOME </a></li>
+                                <li class="<?php if($page =='Services'){echo 'navactive';}?> nav-items"><a href="services.php">SERVICES </a></li>
+                                <li class="<?php if($page =='Contact'){echo 'navactive';}?> nav-items myBtn"><a href="contactus.php">CONTACT US</a></li>
+                            </ul>
+                            <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="menu menu-trigger noprint " id="hamburger-icon" title="Menu">
+                                <span class="line line-1"></span>
+                                <span class="line line-2"></span>
+                                <span class="line line-3"></span>
+                                <span class="menu-text">MENU</span>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="navbar-collapse collapse" id="mobile-nav">
-            <ul class="nav mobile-nav visible-xs " style="color:white; text-align:center;">
-                <li style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0.6);" class="<?php if($page=='Home' ){echo 'mobilenavactive';}?> nav-items"><a href="/">HOME</a></li>
-                <li style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0.6);" class="<?php if($page =='Services'){echo 'mobilenavactive';}?> nav-items"><a href="services.php">SERVICES</a></li>
-                <li data-toggle="collapse" data-target=".navbar-collapse" style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0.6);" class="<?php if($page =='Contact'){echo 'mobilenavactive';}?> nav-items myBtn"><a href="contactus.php">CONTACT US</a></li>
-            </ul>
-        </div>
-        <script>
-            $("#hamburger-icon").click(function () {
-                $("#hamburger-icon").toggleClass("active");
-            });
-            $(".myBtn").click(function () {
-                $("#hamburger-icon").toggleClass("active");
-            });
-        </script>
+    </div>
+    <div class="navbar-collapse collapse" id="mobile-nav">
+        <ul class="nav mobile-nav visible-xs " style="color:white; text-align:center;">
+            <li style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0.6);" class="<?php if($page=='Home' ){echo 'mobilenavactive';}?> nav-items"><a href="/">HOME</a></li>
+            <li style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0.6);" class="<?php if($page =='Services'){echo 'mobilenavactive';}?> nav-items"><a href="services.php">SERVICES</a></li>
+            <li data-toggle="collapse" data-target=".navbar-collapse" style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0.6);" class="<?php if($page =='Contact'){echo 'mobilenavactive';}?> nav-items myBtn"><a href="contactus.php">CONTACT US</a></li>
+        </ul>
+    </div>
+    <script>
+        $("#hamburger-icon").click(function () {
+            $("#hamburger-icon").toggleClass("active");
+        });
+        $(".myBtn").click(function () {
+            $("#hamburger-icon").toggleClass("active");
+        });
+    </script>

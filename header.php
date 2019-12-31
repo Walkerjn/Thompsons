@@ -48,12 +48,8 @@
                         <div class="header-left">
                             <div class="logo">
                                 <?php
-                                        if (($currentDate > $snowDateBegin) && ($currentDate < $snowDateEnd)){
-                                        echo "<a href='/'><img src='img/christmas-logo.png' alt='Thompsons Property Christmas Care Logo' title='Thompsons Property Care'></a>";
-                                            }else{
-                                        echo "<a href='/'><img src='img/main-logo.png' alt='Thompsons Property Care Logo' title='Thompsons Property Care'></a>";  
-                                                }
-                                    ?>
+                                    echo "$xmaslogo";
+                                ?>
                             </div>
                         </div>
                         <div class="header-right">

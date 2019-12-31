@@ -20,12 +20,8 @@
                                         <div style="margin-top:20px;" class="home-second-section">
                                             <div class="second-section-img">
                                                 <?php
-                                                if (($currentDate > $snowDateBegin) && ($currentDate < $snowDateEnd)){
-                                                        echo "<img src='img/christmas.jpg' title='Merry Christmas' alt='Merry Christmas'>";
-                                                    }else{
-                                                        echo "<img src='img/images.jpg' title='Painting' alt='Paint Brush'>";  
-                                                        }
-                                                        ?>
+                                                echo "$normalpic"; 
+                                                ?>
                                             </div>
                                             <div class="second-section-text">
                                                 <h2 class="home-headings">Why Choose Us?</h2>

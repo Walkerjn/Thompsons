@@ -70,13 +70,7 @@
     <script src="js/bootstrap.min.js "></script>
     <script src="js/sections.js"></script>
     <script src="js/validation.js"></script>
-    <?php
-if (($currentDate > $snowDateBegin) && ($currentDate < $snowDateEnd)){
-    echo "<script src='js/fallingsnow_v6.js'></script>";
-}else{
-    echo "";  
-}
-?>
+    <script src='js/fallingsnow_v6.js'></script>
 </footer>
 </body>
 

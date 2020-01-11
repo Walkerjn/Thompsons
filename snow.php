@@ -8,7 +8,6 @@ $normalpic = "<img src='img/images.jpg' title='Painting' alt='Paint Brush'>";
 $xmaslogo = "<a href='/'><img src='img/main-logo.png' alt='Thompsons Property Care Logo' title='Thompsons Property Care'></a>"; 
 
 ?>
-
     <?php
        if (($currentDate >= $snowDateBegin) && ($currentDate <= $snowDateEnd)){
            
